@@ -1,9 +1,101 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-*{
+* {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Shared styling */
+.width {
+  width: 75%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+}
+html {
+  font-size: 16px;
+}
+/* Header color */
+.head{
+    background-color: #1a0b2e;
+}
+
+/* Navbar h2 styling & animation*/
+.navbar h2 {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.navbar>img{
+    display: none;
+}
+.navbar h2 span {
+  background: repeating-linear-gradient(to right,#9100F8, #FB09B4, #F7E93F);
+  background-clip: text;
+  color: transparent;
+  animation: gradient 2s linear infinite;
+  background-size: 200%;
+
+}
+@keyframes gradient {
+    from{
+        background-position: 0;
+    }
+    to{
+        background-position: 200%;
+    }
+}
+
+/* Navbar menu styling */
+.navbar {
+  justify-content: space-between;
+  background-color: #1a0b2e;
+  height: 92px;
+  align-items: center;
+}
+.navbar ul {
+  gap: 32px;
+}
+.navbar ul li {
+  list-style-type: none;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 500;
+  opacity: 0.9;
+}
+.btn{
+    padding: 12px 16px 12px 16px;
+    color:#ffffff;
+    background:linear-gradient(to right,#F7E93F, #FB09B4,  #9100F8);
+    border: none;
+    font-weight: 600;
+    border-radius: 100px;
+    width: 120px;
+    
+}
+@media screen and (max-width:576px){
+    /* Navbar styling */
+    .navbar{
+        
+        justify-content: space-around;
+    }
+    .navbar ul{
+        display: none;
+    }
+    .navbar>img{
+        display: block;
+        margin-left: 80px;
+    }
+    .btn{
+        display: none;
+    }
+}
+
