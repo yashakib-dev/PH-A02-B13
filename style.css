@@ -24,7 +24,7 @@ html {
 .head {
   background-color: #1a0b2e;
   background-image: url(./assets/hero-bg.png);
-  background-position: bottom;
+    background-position: 50% 58%;
 }
 
 /* Navbar h2 styling & animation*/
@@ -84,7 +84,7 @@ html {
 /* Hero section styling */
 .hero {
   position: relative;
-  height: 760px;
+  height: 900px;
 }
 .hero-photo .circle {
   position: absolute;
@@ -107,13 +107,13 @@ html {
 
 .hero-text {
   position: absolute;
-  top: 62%;
-  left: 33%;
+  top: 65%;
+  left: 36.5%;
   color: #ffffff;
   text-align: center;
 }
 .hero-text h2 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-bottom: 8px;
 }
 .hero-text p {
@@ -212,9 +212,9 @@ html {
   }
 
   .hero-text{
-    width: fit-content;
+    width: 340px;
     position: absolute;
-    left: 12%;
+    left: 5%;
     top: 260px;
 
   }
